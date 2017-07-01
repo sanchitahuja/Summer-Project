@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.sanchit.chidiyaudd.SinglePlayer">
+<TextView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:textSize="25sp"
+    android:textColor="@color/colorPrimaryDark"
+    android:id="@+id/score_tv"
+    android:layout_below="@+id/displaytv"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_height="0sp"
+        android:layout_width="0sp"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/displaytv"
+        />
+
+    <TextView
+        android:layout_height="0sp"
+    android:layout_width="0sp"
+    android:layout_centerHorizontal="true"
+    android:layout_alignBottom="@+id/displaytv"
+        android:textSize="25sp"
+    android:id="@+id/countdown_tv"/>
+    <ImageView
+        android:layout_height="200sp"
+        android:layout_width="200sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/displaytv"
+        android:layout_margin="10sp"
+        android:id="@+id/ques_iv"/>
+    <ImageView
+        android:layout_height="0sp"
+        android:layout_width="0sp"
+        android:id="@+id/retry_iv"
+        android:layout_alignBottom="@+id/finger_iv"
+        android:layout_alignLeft="@+id/ques_iv"
+        android:layout_alignStart="@+id/ques_iv"
+        android:layout_marginBottom="114dp" />
+    <ImageView
+        android:layout_height="200sp"
+        android:layout_width="200sp"
+        android:id="@+id/finger_iv"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30sp" />
+
+
+</RelativeLayout>
